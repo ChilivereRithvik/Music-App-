@@ -1,0 +1,470 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.main_div {
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    background-color: #f6f6f6;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+
+    position: relative;
+}
+
+
+.music_container {
+    width: 35rem;
+    height: 75rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 3rem;
+    text-align: center;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.music_container #title {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: #171717;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500rem;
+}
+
+.music_container #artist {
+    color: #cccaca;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+
+.img_container {
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: -20px;
+}
+
+.music_controls {
+    width: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.music_controls .fas {
+    color: #111111;
+    font-size: 2rem;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+
+.music_controls .main_buttom {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #111;
+    color: #f6f6f6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.music_controls #prev,
+#next {
+    font-size: 30px;
+}
+
+.music_controls .fa-play {
+    font-size: x-large;
+}
+
+.music_controls .fas:hover {
+    color: gray;
+}
+
+.music_controls .fa-play:hover {
+    background-color: #f6f6f6;
+    color: #111;
+    -webkit-box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.anime {
+    -webkit-animation: rotatePlayer 3s linear infinite;
+    animation: rotatePlayer 3s linear infinite;
+}
+
+
+.music_controls2 {
+    width: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.music_controls2 .fas {
+    color: #111111;
+    font-size: 2rem;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+
+/* 
+
+  @keyframes rotatePlayer {
+      from {
+          transform: rotate(0deg);
+      }
+
+      to {
+          transform: rotate(360deg);
+      }
+  } */
+
+
+#progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: gray;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Adjust the value as needed */
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+    border: 5px solid #000;
+
+}
+
+
+ .nav .fa {
+     font-size: x-large;
+     margin-left: -135px;
+     margin-top: -13px;
+ }
+
+ #volumeSlider {
+     -webkit-appearance: none;
+     background-color: gray;
+     border-radius: 4px;
+     cursor: pointer;
+     height: 5px;
+     width: 100px;
+
+ }
+
+ #volumeSlider::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     background-color: white;
+     width: 20px;
+     height: 20px;
+
+     border-radius: 50%;
+     border: 5px solid #000;
+ }
+
+
+
+
+/* Add styles for the mode toggle switch */
+.toggle-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+
+.mode-label {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #111;
+}
+
+.switch input:checked+.slider {
+    background-color: white;
+}
+
+.switch input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .fas {
+    margin-top: -8px;
+    font-size: x-large;
+}
+
+.nav p {
+    font-size: x-large;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+        word-spacing: 0.5rem;
+}
+
+.menubar1 {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+}
+
+.menubar1 ul {
+    background-color: rgba(255, 255, 255, 0.578);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    border-radius: 3px;
+
+}
+
+.menubar1 ul li {
+    list-style: none;
+    font-size: large;
+    text-align: start;
+    padding: 0 10px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 250px;
+    margin-left: 20px;
+    transition: all 0.75s ease-in-out;
+}
+
+.menubar1 ul li:hover {
+width: 250px;
+    background-color: rgb(1, 8, 6);
+    border-radius: 3px;
+    color: white;
+    transition: all 0.75s ease-in-out;
+}
+
+.menubar1 {
+    display: none;
+}
+
+#timer {
+    background-color: rgba(127, 255, 212, 0);
+    margin-top: -10px;
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.dark-mode {
+    background-color: #111;
+    color: #fff;
+}
+
+.dark-mode .mode-label {
+    color: rgb(255, 254, 254);
+}
+
+.dark-mode .slider {
+    background-color: #ccc;
+}
+
+.dark-mode .slider:before {
+    background-color: black;
+}
+
+.dark-mode .main_div {
+    background-color: #2a2828;
+    /* Change to your desired dark background color */
+}
+
+.dark-mode .music_container {
+    background-color: #111;
+    color: white;
+}
+
+.dark-mode #title {
+    background-color: #111;
+    color: #ccc;
+}
+
+.dark-mode .music_controls .fas {
+    color: #ccc;
+}
+
+.dark-mode .music_controls .fa-play {
+    background-color: white;
+    color: #111;
+}
+
+.dark-mode .music_controls2 .fas {
+    color: #ccc;
+}
+
+.dark-mode html {
+    background-color: #111;
+}
+
+.dark-mode body {
+    background-color: #111;
+}
+.dark-mode .main_div .menubar ul {
+    background-color: #0c0b0b;
+    /* Change to your desired dark background color */
+    color: #fff;
+    /* Change to your desired text color */
+}
+@media screen and (max-width:695px) {
+    .main_div {
+        top: -95px;
+    }
+}
