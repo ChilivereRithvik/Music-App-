@@ -77,64 +77,64 @@ const songs = [
         name: 'Alone',
         title: "Alone",
         artist: "Alan Walker",
-        source: 'music/Alone.mp4',
-        image: 'images/Alan-Walker.png'
+        source: 'My-Music/music/Alone.mp4',
+        image: 'My-Music/images/Alan-Walker.png'
 
     },
     {
         name: 'Believer',
         title: "Believer",
         artist: "Imagine Dragons",
-        source: 'music/Believer.mp4',
-        image: 'images/Believers.jpeg'
+        source: 'My-Music/music/Believer.mp4',
+        image: 'My-Music/images/Believers.jpeg'
 
     },
     {
         name: 'Cloder',
         title: "Closer",
         artist: "The Chainsmokers",
-        source: 'music/Closer.mp4',
-        image: 'images/Closer.jpeg'
+        source: 'My-Music/music/Closer.mp4',
+        image: 'My-Music/images/Closer.jpeg'
 
     },
     {
         name: 'Darksider',
         title: "DARKSIDE",
         artist: "Neoni",
-        source: 'music/DARKSIDE.mp4',
-        image: 'images/DARKSIDE.jpg'
+        source: 'My-Music/music/DARKSIDE.mp4',
+        image: 'My-Music/images/DARKSIDE.jpg'
 
     },
     {
         name: 'The Drum',
         title: "THE DRUM",
         artist: "Alan Walker",
-        source: 'music/The Drum.mp4',
-        image: 'images/The Drum.jpg'
+        source: 'My-Music/music/The Drum.mp4',
+        image: 'My-Music/images/The Drum.jpg'
 
     },
     {
         name: 'The Spactre',
         title: "THE SPACTRE",
         artist: "Alan Walker",
-        source: 'music/The Spactre.mp4',
-        image: 'images/The Drum.jpg'
+        source: 'My-Music/music/The Spactre.mp4',
+        image: 'My-Music/images/The Drum.jpg'
 
     },
     {
         name: 'Thunder',
         title: "THUNDER",
         artist: "Alan Walker",
-        source: 'music/Thunder.mp4',
-        image: 'images/Believers.jpeg'
+        source: 'My-Music/music/Thunder.mp4',
+        image: 'My-Music/images/Believers.jpeg'
 
     },
     {
         name: 'Faded',
         title: "FADED",
         artist: "Alan Walker",
-        source: 'music/Faded.mp4',
-        image: 'images/Faded.jpg'
+        source: 'My-Music/music/Faded.mp4',
+        image: 'My-Music/images/Faded.jpg'
 
     }
 ]
